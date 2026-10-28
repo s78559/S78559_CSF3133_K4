@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+
+    <!--
+    Error 1 (Line 1): Missing > in DOCTYPE declaration.
+    Fixed by using <!DOCTYPE html>.
+
+    Error 2 (Line 10): Wrong closing tag </head>.
+    Fixed by changing it to </header>.
+
+    Error 3 (Line 20): Rating heading uses <td> instead of <th>.
+    Fixed by using <th>Rating</th>.
+
+    Error 4 (Line 26): Missing > in the opening <tr> tag.
+    Fixed by using <tr>.
+
+    Error 5 (Line 28): colspan="3" causes an extra table column.
+    Fixed by changing it to colspan="2".
+
+    Error 6 (Line 39): Name label uses for="name" but the
+    input on line 40 has id="fullname".
+    Fixed by using matching for="name" and id="name".
+
+    Error 7 (Line 41): Overall rating label has no matching input.
+    Fixed by using a fieldset and legend for the radio group.
+
+    Error 8 (Lines 42 and 44): Radio buttons use different names.
+    Fixed by giving all radio buttons name="rating".
+
+    Error 9 (Line 46): Checkbox label uses for="lab3" but the
+    checkbox has id="lab".
+    Fixed by using for="lab" and id="lab".
+
+    Error 10 (Line 16): The border attribute is obsolete in HTML5.
+    Fixed by removing border="1".
+    -->
+
+    <!-- Header section -->
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+        <p>Share your feedback to improve our learning experience.</p>
+    </header>
+
+    <!-- Navigation section -->
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a> |
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <main>
+
+        <!-- Feedback summary table -->
+        <section id="results">
+            <h2>Feedback Summary</h2>
+
+            <table>
+                <caption>Weekly Course Feedback Results</caption>
+
+                <tr>
+                    <th scope="col">Week</th>
+                    <th scope="col">Topic</th>
+                    <th scope="col">Rating</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to HTML</td>
+                    <td>4.5</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td colspan="2">Tables and Forms</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Semantic HTML</td>
+                    <td>4.0</td>
+                </tr>
+
+                <!-- Week 4 and Week 5 share the same topic -->
+                <tr>
+                    <td>4</td>
+                    <td rowspan="2">Mini Project</td>
+                    <td>4.5</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>4.0</td>
+                </tr>
+
+                <!-- Average of the four available ratings -->
+                <tr>
+                    <th colspan="2" scope="row">Average Rating</th>
+                    <td>4.25</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Student feedback form -->
+        <section id="form">
+            <h2>Give Your Feedback</h2>
+
+            <form action="submit_feedback.php" method="post">
+
+                <!-- Student information -->
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name"
+                           name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email"
+                           name="email" required>
+                </p>
+
+                <!-- Overall rating radio group -->
+                <fieldset>
+                    <legend>Overall Rating:</legend>
+
+                    <input type="radio" id="good"
+                           name="rating" value="good" required>
+                    <label for="good">Good</label>
+
+                    <input type="radio" id="poor"
+                           name="rating" value="poor">
+                    <label for="poor">Poor</label>
+
+                    <input type="radio" id="average"
+                           name="rating" value="average">
+                    <label for="average">Average</label>
+                </fieldset>
+
+                <!-- Lab attendance checkbox -->
+                <p>
+                    <input type="checkbox" id="lab"
+                           name="labs" value="yes">
+                    <label for="lab">I attended all labs</label>
+                </p>
+
+                <!-- Topics for additional practice -->
+                <fieldset>
+                    <legend>Topics I want more practice on:</legend>
+
+                    <input type="checkbox" id="html"
+                           name="topics" value="HTML">
+                    <label for="html">Introduction to HTML</label>
+                    <br>
+
+                    <input type="checkbox" id="tables"
+                           name="topics" value="Tables and Forms">
+                    <label for="tables">Tables and Forms</label>
+                    <br>
+
+                    <input type="checkbox" id="semantic"
+                           name="topics" value="Semantic HTML">
+                    <label for="semantic">Semantic HTML</label>
+                </fieldset>
+
+                <!-- Section or group selection -->
+                <p>
+                    <label for="group">Section/Group:</label>
+
+                    <select id="group" name="group" required>
+                        <option value="">Select your group</option>
+                        <option value="K1">K1</option>
+                        <option value="K2">K2</option>
+                        <option value="K3">K3</option>
+                        <option value="K4">K4</option>
+                    </select>
+                </p>
+
+                <!-- Submit button -->
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+
+            </form>
+        </section>
+
+        <!-- Student comments section -->
+        <section id="comments">
+            <h2>Student Comments</h2>
+
+            <!-- First student comment -->
+            <article>
+                <h3>Ali</h3>
+                <p>
+                    The HTML lessons are interesting and helpful.
+                    I enjoyed learning how to create web pages.
+                </p>
+            </article>
+
+            <!-- Second student comment -->
+            <article>
+                <h3>Abu</h3>
+                <p>
+                    I would like more practice with HTML tables
+                    and forms to improve my coding skills.
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
