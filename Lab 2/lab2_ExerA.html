@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Event Page</title>
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <h1>Blue Coding Day</h1>
+        <p>Learn, Build, and Share Your Ideas!</p>
+    </header>
+
+    <!-- Navigation section -->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <main>
+
+        <!-- About the event -->
+        <section id="about">
+            <h2>About the Event</h2>
+
+            <p>
+                This is a coding program that happening in east coast Malaysia which located in University Malaysia Terengganu.A chance that allow you to come and visit the beautiful of Seaside Terengganu while competing your coding skill with other skilled programmer.
+            </p>
+
+            <article>
+                <h3>Programming Workshop</h3>
+                <p>Learn basic programming skills from experienced lecturers.</p>
+            </article>
+
+            <article>
+                <h3>Mini Hackathon</h3>
+                <p>Work together with other students to solve problems.</p>
+            </article>
+
+            <article>
+                <h3>Career Talk</h3>
+                <p>Learn about future career opportunities in technology.</p>
+            </article>
+        </section>
+
+        <!-- Event schedule table -->
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+
+                <tr>
+                    <td>9:00 AM - 10:00 AM</td>
+                    <td>Registration</td>
+                    <td rowspan="2">DP2 UMTCC</td>
+                    <td>Event Committee</td>
+                </tr>
+
+                <tr>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td>Opening Talk</td>
+                    <td>Dr. Dines</td>
+                </tr>
+
+                <tr>
+                    <td>11:00 AM - 12:00 PM</td>
+                    <td>HTML Workshop</td>
+                    <td>BYOD 1</td>
+                    <td>Ms. Khoo</td>
+                </tr>
+
+                <tr>
+                    <td>12:00 PM - 1:00 PM</td>
+                    <td colspan="3">Lunch Break</td>
+                </tr>
+
+                <tr>
+                    <td>1:00 PM - 2:00 PM</td>
+                    <td>Mini Hackathon</td>
+                    <td>BYOD 2</td>
+                    <td>Mr. Wong</td>
+                </tr>
+
+                <tr>
+                    <td>2:00 PM - 3:00 PM</td>
+                    <td>Career Talk</td>
+                    <td>Dewan Sultan Mizan</td>
+                    <td>Ms. Naveen</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Registration form -->
+        <section id="register">
+            <h2>Event Registration</h2>
+
+            <form action="register.html" method="post">
+
+                <!-- Student details -->
+                <p>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="matric">Matric Number:</label>
+                    <input type="text" id="matric" name="matric" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <!-- Year of study -->
+                <p>Year of Study:</p>
+
+                <input type="radio" id="year1" name="year" value="Year 1">
+                <label for="year1">Year 1</label>
+
+                <input type="radio" id="year2" name="year" value="Year 2">
+                <label for="year2">Year 2</label>
+
+                <input type="radio" id="year3" name="year" value="Year 3">
+                <label for="year3">Year 3</label>
+
+                <input type="radio" id="year4" name="year" value="Year 4">
+                <label for="year4">Year 4</label>
+
+                <!-- Activities -->
+                <p>Choose Your Activities:</p>
+
+                <input type="checkbox" id="workshop" name="activities"
+                       value="Workshop">
+                <label for="workshop">Programming Workshop</label>
+
+                <br>
+
+                <input type="checkbox" id="hackathon" name="activities"
+                       value="Hackathon">
+                <label for="hackathon">Mini Hackathon</label>
+
+                <br>
+
+                <input type="checkbox" id="career" name="activities"
+                       value="Career Talk">
+                <label for="career">Career Talk</label>
+
+                <!-- Programme selection -->
+                <p>
+                    <label for="programme">Programme:</label>
+
+                    <select id="programme" name="programme" required>
+                        <option value="">Select your programme</option>
+                        <option value="Software Engineering">
+                            Software Engineering
+                        </option>
+                        <option value="Computer Science">
+                            Computer Science
+                        </option>
+                        <option value="Information Technology">
+                            Information Technology
+                        </option>
+                        <option value="Data Analyst">
+                            Data Analyst
+                        </option>
+                    </select>
+                </p>
+
+                <!-- Submit button -->
+                <p>
+                    <button type="submit">Register</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>Faculty of Computing</p>
+        <p>Copyright &copy; 2026 Faculty of Computing</p>
+    </footer>
+
+</body>
+</html>
