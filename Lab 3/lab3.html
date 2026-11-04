@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Contact Form</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div>
+        <h1>Contact Us</h1>
+        <span>We are here to help you!</span>
+        <hr>
+    </div>
+
+
+    <!-- Content Section -->
+    <div>
+
+        <h2>Contact Form</h2>
+
+        <form action="#" method="post">
+
+            <!-- Email Input -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <br><br>
+
+            <!-- Date Input -->
+            <label for="contactDate">Preferred Contact Date:</label>
+            <input type="date" id="contactDate" name="contactDate" required>
+
+            <br><br>
+
+            <!-- Range Slider -->
+            <label for="satisfaction">Satisfaction Level:</label>
+            <input type="range" id="satisfaction" name="satisfaction"
+                   min="1" max="10" value="5"
+                   oninput="document.getElementById('level').textContent = this.value">
+
+            <span id="level">5</span>
+
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <hr>
+
+        <!-- Inline Calculator -->
+        <div>
+
+            <h2>Simple Calculator</h2>
+
+            <p>Enter two numbers to calculate their sum.</p>
+
+            <label for="num1">First Number:</label>
+            <input type="number" id="num1" placeholder="Enter first number"
+                   oninput="calculateSum()">
+
+            <br><br>
+
+            <label for="num2">Second Number:</label>
+            <input type="number" id="num2" placeholder="Enter second number"
+                   oninput="calculateSum()">
+
+            <br><br>
+
+            <label>Sum:</label>
+            <output id="result" for="num1 num2">0</output>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <div>
+
+        <hr>
+
+        <h3>Contact Information</h3>
+
+        <p>Email: support@example.com</p>
+        <p>Phone: +60 12-345 6789</p>
+        <p>Address: Kuala Terengganu, Malaysia</p>
+
+        <p>&copy; 2026 Contact Us. All Rights Reserved.</p>
+
+    </div>
+
+
+    <!-- JavaScript for Calculator -->
+    <script>
+
+        function calculateSum() {
+
+            let number1 = parseFloat(document.getElementById("num1").value) || 0;
+
+            let number2 = parseFloat(document.getElementById("num2").value) || 0;
+
+            let sum = number1 + number2;
+
+            document.getElementById("result").textContent = sum;
+
+        }
+
+    </script>
+
+</body>
+</html>
