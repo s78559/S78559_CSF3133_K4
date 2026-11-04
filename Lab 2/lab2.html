@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my personal profile page!</p>
+    </header>
+
+    <hr>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#profile">Profile</a> |
+        <a href="#information">Personal Information</a> |
+        <a href="#form">Contact Form</a>
+    </nav>
+
+    <hr>
+
+    <!-- Main Section -->
+    <main>
+
+        <!-- Profile Section -->
+        <section id="profile">
+
+            <article>
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! My name is Wong Shu Hong.
+                    I am a second-year Software Engineering
+                    student at Universiti Malaysia Terengganu (UMT).
+                    I come from Ipoh, Perak.
+                </p>
+
+                <p>
+                    My favourite hobbies are playing badminton
+                    and chess. I enjoy learning new things
+                    and improving my programming skills.
+                </p>
+
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- Personal Information Table -->
+        <section id="information">
+
+            <h2>Personal Information</h2>
+
+            <table border="1">
+
+                <tr>
+                    <th>Information</th>
+                    <th>Details</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td>Wong Shu Hong</td>
+                    <td>University Student</td>
+                </tr>
+
+                <tr>
+                    <td>Age</td>
+                    <td>20 Years Old</td>
+                    <td>Young Adult</td>
+                </tr>
+
+                <tr>
+                    <td>University</td>
+                    <td>UMT</td>
+                    <td>Universiti Malaysia Terengganu</td>
+                </tr>
+
+                <tr>
+                    <td>Course</td>
+                    <td>Software Engineering</td>
+                    <td>Year 2 Student</td>
+                </tr>
+
+                <tr>
+                    <td>Hobbies</td>
+                    <td>Badminton and Chess</td>
+                    <td>Sports and Strategy Games</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- User Information Form -->
+        <section id="form">
+
+            <h2>Personal Information Form</h2>
+
+            <form action="#" method="post">
+
+                <!-- Name Input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <br><br>
+
+                <!-- Email Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <br><br>
+
+                <!-- Gender Radio Buttons -->
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <br><br>
+
+                <!-- Hobbies Checkboxes -->
+                <label>Favourite Hobbies:</label>
+
+                <br>
+
+                <input type="checkbox" id="badminton"
+                       name="hobbies" value="Badminton">
+                <label for="badminton">Badminton</label>
+
+                <br>
+
+                <input type="checkbox" id="chess"
+                       name="hobbies" value="Chess">
+                <label for="chess">Chess</label>
+
+                <br>
+
+                <input type="checkbox" id="reading"
+                       name="hobbies" value="Reading">
+                <label for="reading">Reading</label>
+
+                <br>
+
+                <input type="checkbox" id="music"
+                       name="hobbies" value="Music">
+                <label for="music">Music</label>
+
+                <br><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+
+        <p>Contact: wongshuhong@example.com</p>
+
+        <p>&copy; 2026 My Personal Profile. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
