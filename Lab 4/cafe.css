@@ -1,0 +1,302 @@
+
+/* =====================================
+   GENERAL WEBSITE STYLING
+   ===================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FDF2E9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =====================================
+   HEADER STYLING
+   ===================================== */
+
+header {
+    background-color: #FDEBD0;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #1A5276;
+}
+
+.intro {
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+}
+
+
+/* =====================================
+   NAVIGATION BAR STYLING
+   ===================================== */
+
+nav {
+    background-color: #784212;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 14px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Navigation link states */
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: #F5CBA7;
+}
+
+nav a:hover {
+    background-color: #D68910;
+    color: white;
+}
+
+nav a:active {
+    background-color: #C0392B;
+    color: white;
+}
+
+
+/* =====================================
+   GENERAL LINK STATES
+   ===================================== */
+
+a:link {
+    color: #1A5276;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+
+/* =====================================
+   SECTION STYLING
+   ===================================== */
+
+section {
+    background-color: white;
+    width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #784212;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   MENU ITEM STYLING
+   ===================================== */
+
+.item {
+    background-color: #FDF2E9;
+    border: 1px solid #D5B89A;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.item h3 {
+    color: #784212;
+}
+
+
+/* Old and new promotional prices */
+
+.old-price {
+    color: #888888;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+    font-size: 18px;
+}
+
+
+/* =====================================
+   VIDEO STYLING
+   ===================================== */
+
+#video {
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #784212;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 15px auto;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 10px;
+}
+
+
+/* =====================================
+   FEEDBACK FORM STYLING
+   ===================================== */
+
+#feedback {
+    background-color: #FDF2E9;
+    border: 2px solid #D5B89A;
+}
+
+.feedback-form {
+    background-color: white;
+    border: 2px solid #D5B89A;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.feedback-form label {
+    margin-right: 12px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-form input[type="radio"],
+.feedback-form input[type="checkbox"] {
+    margin: 10px 5px;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #784212;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #D68910;
+}
+
+
+/* =====================================
+   FOOTER STYLING
+   ===================================== */
+
+footer {
+    background-color: #784212;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+footer a:link {
+    color: white;
+}
+
+footer a:visited {
+    color: #F5CBA7;
+}
+
+footer a:hover {
+    color: #F7DC6F;
+}
+
+footer a:active {
+    color: #FF0000;
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+   ===================================== */
+
+@media screen and (max-width: 600px) {
+
+    section {
+        width: 95%;
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    .feedback-form {
+        width: 100%;
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .item {
+        padding: 12px;
+    }
+}

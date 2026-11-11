@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e-Café Campus</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333;
+            margin: 0;
+        }
+
+        h1 {
+            color: #1A5276;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+    PART 1: IDENTIFICATION OF ORIGINAL ERRORS
+
+    1. Line 14-16: Incorrect order of link pseudo-classes.
+       Correct order is link, visited, hover and active.
+
+    2. Line 17: The heading decoration caused an unwanted
+       line above the heading.
+
+    3. Line 19: The #intro selector did not match the
+       class="intro" used in the HTML.
+
+    4. Line 43 and 46: The same ID "item" was used
+       for multiple articles. IDs should be unique.
+
+    5. Line 53: The video element did not have controls.
+
+    6. Line 53-56: The video was not responsive on
+       smaller screens.
+
+    7. Line 8-12: Navigation styling was not separated
+       into the required external CSS file.
+
+    8. Line 34-36: Navigation links needed proper
+       styling and working section destinations.
+
+    9. Line 58-60: The footer was missing an address
+       element and an email link.
+
+    10. Original page: The feedback section and its
+        form were missing.
+
+    11. Original page: The menu items did not display
+        old prices with line-through decoration.
+
+    12. Original page: The video did not have a
+        figure and figcaption.
+    -->
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header id="home">
+        <h1>e-Café Campus</h1>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights
+            every day.
+        </p>
+    </header>
+
+
+    <!-- ================= NAVIGATION BAR ================= -->
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ================= MENU SECTION ================= -->
+
+    <section id="menu">
+
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Enjoy freshly prepared coffee and delicious
+            local food at affordable prices.
+        </p>
+
+
+        <!-- Menu Item 1 -->
+
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+
+            <p>
+                Enjoy our traditional Malaysian pulled
+                coffee with a rich and smooth taste.
+            </p>
+
+            <p>
+                Old Price:
+                <span class="old-price">RM 4.50</span>
+
+                New Price:
+                <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+
+        <!-- Menu Item 2 -->
+
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+
+            <p>
+                A popular Malaysian breakfast served
+                with fragrant coconut rice, sambal,
+                anchovies, peanuts and egg.
+            </p>
+
+            <p>
+                Old Price:
+                <span class="old-price">RM 6.50</span>
+
+                New Price:
+                <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+
+
+        <!-- Menu Item 3 -->
+
+        <article class="item">
+            <h3>Chocolate Latte</h3>
+
+            <p>
+                A delicious combination of creamy
+                milk, chocolate and freshly brewed coffee.
+            </p>
+
+            <p>
+                Old Price:
+                <span class="old-price">RM 7.00</span>
+
+                New Price:
+                <span class="highlight">RM 5.50</span>
+            </p>
+        </article>
+
+    </section>
+
+
+    <!-- ================= VIDEO SECTION ================= -->
+
+    <section id="video">
+
+        <h2>Watch Our Story</h2>
+
+        <figure>
+
+            <video controls width="400">
+
+                <source src="cafe.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+            <figcaption>
+                Discover our campus café, delicious food
+                and freshly brewed coffee.
+            </figcaption>
+
+        </figure>
+
+    </section>
+
+
+    <!-- ================= FEEDBACK SECTION ================= -->
+
+    <section id="feedback">
+
+        <h2>Customer Feedback</h2>
+
+        <p>
+            We value your opinion!
+            Please complete the form below to help us
+            improve our café services.
+        </p>
+
+
+        <!-- Feedback Form -->
+
+        <form class="feedback-form" action="#" method="post">
+
+            <!-- Customer Name -->
+
+            <label for="customer-name">
+                Name:
+            </label>
+
+            <input type="text"
+                   id="customer-name"
+                   name="customer-name"
+                   placeholder="Enter your name"
+                   required>
+
+
+            <!-- Email Address -->
+
+            <label for="customer-email">
+                Email:
+            </label>
+
+            <input type="email"
+                   id="customer-email"
+                   name="customer-email"
+                   placeholder="Enter your email"
+                   required>
+
+
+            <!-- Visit Type -->
+
+            <p>Visit Type:</p>
+
+            <input type="radio"
+                   id="dine-in"
+                   name="visit-type"
+                   value="Dine-in"
+                   required>
+
+            <label for="dine-in">
+                Dine-in
+            </label>
+
+
+            <input type="radio"
+                   id="take-away"
+                   name="visit-type"
+                   value="Take-away">
+
+            <label for="take-away">
+                Take-away
+            </label>
+
+
+            <!-- Favourite Items -->
+
+            <p>Favourite Items:</p>
+
+            <input type="checkbox"
+                   id="coffee"
+                   name="favourite"
+                   value="Coffee">
+
+            <label for="coffee">
+                Coffee
+            </label>
+
+
+            <input type="checkbox"
+                   id="food"
+                   name="favourite"
+                   value="Food">
+
+            <label for="food">
+                Food
+            </label>
+
+
+            <input type="checkbox"
+                   id="dessert"
+                   name="favourite"
+                   value="Dessert">
+
+            <label for="dessert">
+                Dessert
+            </label>
+
+
+            <br><br>
+
+            <!-- Submit Button -->
+
+            <input type="submit" value="Submit Feedback">
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <p>
+            &copy; 2026 e-Café Campus.
+            All Rights Reserved.
+        </p>
+
+        <address>
+            Contact us:
+
+            <a href="mailto:ecafe@campus.com">
+                ecafe@campus.com
+            </a>
+        </address>
+
+    </footer>
+
+</body>
+</html>
