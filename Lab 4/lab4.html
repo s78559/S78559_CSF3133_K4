@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Profile</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .welcome-text {
+            color: #6c4ccf;
+            text-align: center;
+            text-decoration: overline;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .special-text {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        #video {
+            background-color: #f1edff;
+            padding: 20px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Personal Profile</h1>
+        <p class="welcome-text">
+            Welcome to My Personal Website!
+        </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">My Hobbies</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to My Website</h2>
+
+            <p>
+                Hello! Welcome to my personal website.
+                This website introduces myself, my interests,
+                hobbies and favourite activities.
+            </p>
+
+            <p>
+                I believe that learning new things and exploring
+                different activities can help us improve ourselves.
+            </p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <article>
+                <h3>Who Am I?</h3>
+
+                <p>
+                    My name is Shu Hong. I am a university student
+                    who enjoys learning new technologies and
+                    developing new skills.
+                </p>
+
+                <p>
+                    I am currently interested in computer science,
+                    web development and programming. I enjoy
+                    challenging myself and gaining new experiences.
+                </p>
+            </article>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>My Favourite Hobbies</h2>
+
+            <article>
+                <h3>1. Badminton</h3>
+
+                <p>
+                    Badminton is one of my favourite sports.
+                    It helps me stay healthy, improve my reflexes
+                    and develop teamwork.
+                </p>
+            </article>
+
+            <article>
+                <h3>2. Playing Chess</h3>
+
+                <p>
+                    Chess helps me improve my critical thinking,
+                    concentration and problem-solving skills.
+                </p>
+            </article>
+
+            <article>
+                <h3>3. Learning Programming</h3>
+
+                <p>
+                    I enjoy learning programming because it allows
+                    me to create useful applications and websites.
+                </p>
+            </article>
+
+            <p class="special-text">
+                Watching television is not my favourite hobby.
+            </p>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+            <h2>My Favourite Video</h2>
+
+            <figure>
+                <video controls width="100%">
+                    <source
+                        src="https://www.w3schools.com/html/mov_bbb.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support HTML5 video.
+                </video>
+
+                <figcaption>
+                    Figure 1: An example of an embedded HTML5 video.
+                </figcaption>
+            </figure>
+
+            <p>
+                HTML5 video allows users to watch videos directly
+                on a webpage without installing additional plugins.
+            </p>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                Please complete the form below to share
+                your information and favourite hobbies.
+            </p>
+
+            <form action="#" method="get">
+
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <!-- Gender -->
+                <label>Gender:</label>
+
+                <div class="options">
+                    <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="Male"
+                        required>
+
+                    <label for="male">Male</label>
+
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="Female">
+
+                    <label for="female">Female</label>
+                </div>
+
+                <!-- Favourite Hobbies -->
+                <label>Favourite Hobbies:</label>
+
+                <div class="options">
+                    <input
+                        type="checkbox"
+                        id="badminton"
+                        name="hobbies"
+                        value="Badminton">
+
+                    <label for="badminton">Badminton</label>
+
+                    <input
+                        type="checkbox"
+                        id="chess"
+                        name="hobbies"
+                        value="Chess">
+
+                    <label for="chess">Chess</label>
+
+                    <input
+                        type="checkbox"
+                        id="programming"
+                        name="hobbies"
+                        value="Programming">
+
+                    <label for="programming">Programming</label>
+
+                    <input
+                        type="checkbox"
+                        id="reading"
+                        name="hobbies"
+                        value="Reading">
+
+                    <label for="reading">Reading</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Personal Profile. All Rights Reserved.</p>
+
+        <p>
+            Visit
+            <a href="https://www.w3schools.com/"
+               target="_blank">
+                W3Schools
+            </a>
+            to learn more about HTML and CSS.
+        </p>
+    </footer>
+
+</body>
+</html>
