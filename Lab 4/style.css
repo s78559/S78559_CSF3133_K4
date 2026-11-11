@@ -1,0 +1,294 @@
+
+/* =====================================
+   GENERAL WEBSITE STYLING
+   ===================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf5f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   HEADER STYLING
+   ===================================== */
+
+header {
+    background-color: #087e8b;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    text-decoration: overline;
+}
+
+.center {
+    text-align: center;
+    font-size: 17px;
+}
+
+
+/* =====================================
+   NAVIGATION BAR STYLING
+   ===================================== */
+
+nav {
+    background-color: #123b52;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #f4a261;
+    color: #123b52;
+}
+
+
+/* =====================================
+   INTERACTIVE LINK STATES
+   ===================================== */
+
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #d6e8ff;
+}
+
+a:hover {
+    color: #ffcc66;
+}
+
+a:active {
+    color: #ff0000;
+}
+
+
+/* =====================================
+   SECTION STYLING
+   ===================================== */
+
+section {
+    width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #087e8b;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h3 {
+    color: #145374;
+}
+
+
+/* =====================================
+   DESTINATION CARD STYLING
+   ===================================== */
+
+#destinations {
+    background-color: #f0faff;
+    border: 2px solid #b5dce5;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #b5dce5;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.card h3 {
+    text-decoration: underline;
+}
+
+.price {
+    font-weight: bold;
+    color: #087e8b;
+}
+
+.old-price {
+    color: #888888;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.price strong {
+    color: #e63946;
+    font-size: 20px;
+}
+
+
+/* =====================================
+   VIDEO SECTION STYLING
+   ===================================== */
+
+#video {
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #087e8b;
+    border-radius: 10px;
+}
+
+.caption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 10px;
+}
+
+
+/* =====================================
+   TRIP FORM STYLING
+   ===================================== */
+
+#trip {
+    background-color: #f0faff;
+    border: 2px solid #b5dce5;
+}
+
+.trip-form {
+    background-color: #e1f3f7;
+    padding: 25px;
+    border: 2px solid #087e8b;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.trip-form label {
+    margin-right: 10px;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.trip-form input[type="radio"],
+.trip-form input[type="checkbox"] {
+    margin: 10px 5px;
+}
+
+.trip-form input[type="submit"] {
+    background-color: #087e8b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.trip-form input[type="submit"]:hover {
+    background-color: #f4a261;
+    color: #123b52;
+}
+
+
+/* =====================================
+   FOOTER STYLING
+   ===================================== */
+
+footer {
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer a:link {
+    color: #ffffff;
+}
+
+footer a:visited {
+    color: #d6e8ff;
+}
+
+footer a:hover {
+    color: #ffcc66;
+}
+
+footer a:active {
+    color: #ff0000;
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+   ===================================== */
+
+@media screen and (max-width: 600px) {
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .trip-form {
+        width: 100%;
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card {
+        padding: 12px;
+    }
+}

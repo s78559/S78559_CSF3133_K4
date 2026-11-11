@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visit Terengganu - Tourism Promotion</title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #123b52;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>VISIT TERENGGANU</h1>
+        <p class="center">
+            Discover the Beauty of Malaysia's East Coast
+        </p>
+        <p class="center">
+            Beautiful Islands | Amazing Culture | Wonderful Nature
+        </p>
+    </header>
+
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Tourism Video</a></li>
+            <li><a href="#trip">Plan Your Trip</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ================= HOME SECTION ================= -->
+    <section id="home">
+        <h2>Welcome to Terengganu</h2>
+
+        <p>
+            Terengganu is one of the most beautiful states in Malaysia.
+            It is famous for its beautiful islands, traditional culture,
+            delicious local food and stunning natural attractions.
+            Whether you enjoy relaxing at the beach, exploring historical
+            places or experiencing nature, Terengganu has something
+            special for everyone.
+        </p>
+    </section>
+
+
+    <!-- ================= DESTINATIONS SECTION ================= -->
+    <section id="destinations">
+        <h2>Popular Tourist Destinations</h2>
+
+        <!-- Destination 1 -->
+        <article class="card">
+            <h3>Pulau Redang</h3>
+
+            <p>
+                Pulau Redang is famous for its crystal-clear seawater,
+                white sandy beaches and beautiful coral reefs.
+                Visitors can enjoy snorkelling, diving and relaxing
+                by the beach while enjoying the tropical scenery.
+            </p>
+
+            <p class="price">
+                Promotion Price:
+                <span class="old-price">RM299</span>
+                <strong>RM199</strong>
+            </p>
+        </article>
+
+
+        <!-- Destination 2 -->
+        <article class="card">
+            <h3>Masjid Kristal</h3>
+
+            <p>
+                Masjid Kristal is a famous landmark located in
+                Kuala Terengganu. Its unique architecture combines
+                glass, steel and crystal, creating a beautiful
+                appearance especially when illuminated at night.
+            </p>
+
+            <p class="price">
+                Promotion Price:
+                <span class="old-price">RM99</span>
+                <strong>RM59</strong>
+            </p>
+        </article>
+
+
+        <!-- Destination 3 -->
+        <article class="card">
+            <h3>Tasik Kenyir</h3>
+
+            <p>
+                Tasik Kenyir is the largest man-made lake in
+                Southeast Asia. It offers beautiful natural scenery,
+                waterfalls, fishing activities and exciting
+                adventures for nature lovers.
+            </p>
+
+            <p class="price">
+                Promotion Price:
+                <span class="old-price">RM250</span>
+                <strong>RM180</strong>
+            </p>
+        </article>
+
+    </section>
+
+
+    <!-- ================= VIDEO SECTION ================= -->
+    <section id="video">
+        <h2>Explore the Beauty of Terengganu</h2>
+
+        <figure>
+            <video width="640" height="360" controls>
+                <source src="terengganu-video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+                Please use a modern browser to watch this video.
+            </video>
+
+            <figcaption class="caption">
+                Discover the beautiful islands, beaches and
+                attractions of Terengganu.
+            </figcaption>
+        </figure>
+    </section>
+
+
+    <!-- ================= TRIP INTEREST SECTION ================= -->
+    <section id="trip">
+        <h2>Plan Your Trip to Terengganu</h2>
+
+        <p>
+            Interested in visiting Terengganu?
+            Complete the form below and let us know your
+            travel preferences!
+        </p>
+
+        <!-- Available Trip Seats -->
+        <h3>Available Trip Seats</h3>
+
+        <p>28 out of 40 seats have been filled.</p>
+
+        <meter min="0" max="40" value="28">
+            28 out of 40
+        </meter>
+
+
+        <!-- Trip Interest Form -->
+        <form class="trip-form" action="#" method="post">
+
+            <!-- Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email address" required>
+
+
+            <!-- Traveller Type -->
+            <p>Traveller Type:</p>
+
+            <input type="radio" id="student" name="traveller"
+                   value="Student">
+            <label for="student">Student</label>
+
+            <input type="radio" id="staff" name="traveller"
+                   value="Staff">
+            <label for="staff">Staff</label>
+
+            <input type="radio" id="public" name="traveller"
+                   value="Public">
+            <label for="public">Public</label>
+
+
+            <!-- Travel Interests -->
+            <p>Choose Your Interests:</p>
+
+            <input type="checkbox" id="islands"
+                   name="interest" value="Islands">
+            <label for="islands">Islands</label>
+
+            <input type="checkbox" id="food"
+                   name="interest" value="Food">
+            <label for="food">Food</label>
+
+            <input type="checkbox" id="culture"
+                   name="interest" value="Culture">
+            <label for="culture">Culture</label>
+
+            <input type="checkbox" id="nature"
+                   name="interest" value="Nature">
+            <label for="nature">Nature</label>
+
+
+            <!-- Submit Button -->
+            <br><br>
+            <input type="submit" value="Submit My Interest">
+
+        </form>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu Tourism Promotion</p>
+
+        <p>
+            Discover Terengganu, Experience Malaysia.
+        </p>
+
+        <address>
+            Contact us:
+            <a href="mailto:visit@terengganu.com">
+                visit@terengganu.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>
