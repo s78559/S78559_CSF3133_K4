@@ -1,0 +1,245 @@
+
+/* =========================================
+   GENERAL SETTINGS
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #F2F2F2;
+    color: #333;
+}
+
+
+/* =========================================
+   1. HEADER WITH BACKGROUND IMAGE
+========================================= */
+
+header {
+    width: 100%;
+    min-height: 150px;
+    padding: 25px 10px;
+
+    background-image: url("header-bg.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   2. HORIZONTAL NAVIGATION BAR
+========================================= */
+
+nav {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav a:hover {
+    background-color: #E67E22;
+    color: white;
+}
+
+nav a.active {
+    background-color: #E67E22;
+    color: white;
+}
+
+
+/* =========================================
+   3. CONTENT SECTION AND TEXT FORMATTING
+========================================= */
+
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    background-color: white;
+    min-height: 300px;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+section p {
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   4. FREE ENTRY NOTICE
+========================================= */
+
+section p[style] {
+    border-radius: 4px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   5. STYLED TABLE
+========================================= */
+
+#foodTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+#foodTable th,
+#foodTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#foodTable th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+}
+
+#foodTable td {
+    text-align: left;
+}
+
+/* Alternating row colours */
+
+#foodTable tbody tr:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+#foodTable tbody tr:nth-child(even) {
+    background-color: #FDEBD0;
+}
+
+/* Table hover effect */
+
+#foodTable tbody tr:hover {
+    background-color: #F9E0C0;
+    cursor: pointer;
+}
+
+/* Align price to the right */
+
+#foodTable td:last-child {
+    text-align: right;
+}
+
+
+/* =========================================
+   6. FOOTER
+========================================= */
+
+footer {
+    width: 100%;
+    background-color: #EFE6D8;
+    color: #333;
+
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        min-height: 130px;
+        padding: 25px 10px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 11px;
+    }
+
+    nav li {
+        float: none;
+        width: 100%;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #foodTable {
+        font-size: 11px;
+    }
+
+    #foodTable th,
+    #foodTable td {
+        padding: 6px;
+    }
+}
