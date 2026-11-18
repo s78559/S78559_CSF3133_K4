@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Bookstore</title>
+
+    <!-- Google Font 1: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google Font 2: Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+    <!--
+    HTML ERROR IDENTIFICATION AND CORRECTION
+
+    Error 1 - Original Line 7:
+    Incorrect rel="stylesheets".
+    Corrected to rel="stylesheet".
+
+    Error 2 - Original Lines 10-12:
+    Internal CSS was placed inside the body.
+    Moved styling into the external CSS file.
+
+    Error 3 - Original Line 13:
+    Navigation list was missing the nav element.
+    Added the nav element.
+
+    Error 4 - Original Line 18:
+    Main heading was not inside a header element.
+    Added the header element.
+
+    Error 5 - Original Line 18:
+    Inline heading colour styling was used.
+    Moved the heading styling into shop.css.
+
+    Error 6 - Original Lines 19-20:
+    Main content was not inside a main element.
+    Added the main element.
+
+    Error 7 - Original Line 20:
+    Table ID was "product" but CSS used "#products".
+    Changed the table ID to "products".
+
+    Error 8 - Original Lines 14-16:
+    Navigation links did not have matching section IDs.
+    Added matching IDs to the page sections.
+
+    Error 9 - Original Lines 14-16:
+    Home link had no active class.
+    Added class="active" to the Home link.
+
+    Error 10 - Original Structure:
+    The page lacked proper semantic structure.
+    Added header, nav, main and footer elements.
+
+    -->
+
+    <!-- HEADER -->
+    <header id="home">
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main id="books">
+
+        <h2>Our Products</h2>
+
+        <p>
+            Find everything you need for your studies at
+            Campus Bookstore. We offer textbooks, stationery
+            and gadgets at affordable prices for every student.
+        </p>
+
+
+        <!-- PRODUCT TABLE -->
+        <table id="products">
+
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Price (RM)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Web Design Basics</td>
+                    <td>Textbook</td>
+                    <td>45.00</td>
+                </tr>
+
+                <tr>
+                    <td>A4 Notebook</td>
+                    <td>Stationery</td>
+                    <td>6.50</td>
+                </tr>
+
+                <tr>
+                    <td>USB Drive 32GB</td>
+                    <td>Gadget</td>
+                    <td>25.00</td>
+                </tr>
+
+                <tr>
+                    <td>Highlighter Set</td>
+                    <td>Stationery</td>
+                    <td>9.90</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+        <p>Contact: info@campusbookstore.com</p>
+    </footer>
+
+</body>
+</html>
