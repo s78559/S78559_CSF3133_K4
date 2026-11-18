@@ -1,0 +1,481 @@
+
+/* =====================================
+   UNIVERSITI MALAYSIA TERENGGANU
+   External CSS - Lab Exercise 5
+===================================== */
+
+/* Google Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f7f8;
+    color: #263746;
+    line-height: 1.8;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    background: linear-gradient(135deg, #063b52, #087e8b, #12a6a6);
+    color: white;
+    padding: 25px 8%;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 40px;
+}
+
+.logo h2 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.header-text {
+    text-align: center;
+    padding: 65px 10px 75px;
+}
+
+.welcome {
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+    color: #b9ffff;
+}
+
+.header-text h1 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.header-text > p:last-of-type {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.header-button {
+    display: inline-block;
+    background-color: white;
+    color: #075568;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.header-button:hover {
+    background-color: #ffcc66;
+    color: #073b50;
+    transform: translateY(-3px);
+}
+
+/* =====================================
+   NAVIGATION BAR
+===================================== */
+
+nav {
+    background-color: #063b52;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 17px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #12a6a6;
+    color: #ffffff;
+}
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 25px;
+}
+
+.content-section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.section-title {
+    color: #075568;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #12a6a6;
+}
+
+.section-description {
+    text-align: center;
+    color: #687985;
+    margin-bottom: 30px;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* =====================================
+   ABOUT SECTION
+===================================== */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+}
+
+.about-card {
+    background: linear-gradient(135deg, #075568, #12a6a6);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 15px;
+}
+
+.wave-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.about-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* =====================================
+   HISTORY SECTION
+===================================== */
+
+.history-section {
+    border-left: 6px solid #12a6a6;
+}
+
+.timeline {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 3px solid #12a6a6;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 5px 0 20px 25px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #12a6a6;
+    border-radius: 50%;
+    left: -28px;
+    top: 13px;
+}
+
+.timeline-item span {
+    display: inline-block;
+    background-color: #075568;
+    color: white;
+    padding: 5px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.timeline-item p {
+    margin-bottom: 0;
+}
+
+/* =====================================
+   FACULTY SECTION
+===================================== */
+
+.faculty-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.faculty-card {
+    background-color: #f0f9fa;
+    border: 1px solid #d7eeee;
+    border-radius: 12px;
+    padding: 25px 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-7px);
+    background-color: #e0f5f5;
+    border-color: #12a6a6;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+}
+
+.faculty-card span {
+    font-size: 38px;
+}
+
+.faculty-card h3 {
+    color: #075568;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.faculty-card p {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+/* =====================================
+   TABLE SECTION
+===================================== */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+thead {
+    background-color: #075568;
+    color: white;
+}
+
+th {
+    padding: 16px;
+    text-align: left;
+    font-size: 15px;
+}
+
+td {
+    padding: 14px 16px;
+    border: 1px solid #dce6e8;
+    font-size: 14px;
+}
+
+/* Alternating Row Colours */
+tbody tr:nth-child(even) {
+    background-color: #eaf5f6;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Table Hover Effect */
+tbody tr:hover {
+    background-color: #c9eeee;
+    transition: 0.2s;
+}
+
+table a {
+    color: #087e8b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   CONTACT SECTION
+===================================== */
+
+.contact-section {
+    background: linear-gradient(135deg, #e8f6f7, #ffffff);
+}
+
+.contact-card {
+    background-color: white;
+    border-left: 5px solid #12a6a6;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-card p {
+    margin-bottom: 12px;
+}
+
+.contact-card a {
+    color: #087e8b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background-color: #063b52;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+footer a {
+    display: inline-block;
+    color: #b9ffff;
+    text-decoration: none;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #ffcc66;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    .header-text h1 {
+        font-size: 27px;
+    }
+
+    .header-text {
+        padding: 45px 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+
+    .content-section {
+        padding: 25px 18px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .faculty-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .header-text h1 {
+        font-size: 22px;
+    }
+
+    .faculty-container {
+        grid-template-columns: 1fr;
+    }
+
+    .logo h2 {
+        font-size: 23px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
