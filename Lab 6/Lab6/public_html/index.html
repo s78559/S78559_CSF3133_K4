@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Application</title>
+
+    <!-- Link external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+        <h1>Web Development Quiz</h1>
+        <p>Test your knowledge of HTML, CSS and JavaScript!</p>
+    </header>
+
+    <main>
+
+        <!-- Quiz introduction section -->
+        <section id="startSection" class="start-section">
+
+            <h2>Welcome to the Quiz!</h2>
+
+            <p>
+                Answer the multiple-choice questions before
+                the timer runs out.
+            </p>
+
+            <p>Each question has 15 seconds.</p>
+
+            <button onclick="startQuiz()">Start Quiz</button>
+
+        </section>
+
+
+        <!-- Main quiz section -->
+        <section id="quizSection" class="quiz-section" hidden>
+
+            <!-- Quiz information -->
+            <div class="quiz-info">
+
+                <p id="questionNumber">Question 1</p>
+
+                <div class="timer-box">
+                    <span>Time Left:</span>
+                    <span id="timer">15</span>
+                    <span>seconds</span>
+                </div>
+
+            </div>
+
+            <!-- Timer progress bar -->
+            <div class="timer-bar">
+                <div id="timerProgress"></div>
+            </div>
+
+            <!-- Question display -->
+            <h2 id="question">Question will appear here</h2>
+
+            <!-- Answer options -->
+            <div id="options" class="options">
+
+            </div>
+
+            <!-- Feedback section -->
+            <div id="feedback" class="feedback" aria-live="polite">
+
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="button-group">
+
+                <button id="submitBtn" onclick="checkAnswer()">
+                    Submit Answer
+                </button>
+
+                <button id="nextBtn" onclick="nextQuestion()" hidden>
+                    Next Question
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Final result section -->
+        <section id="resultSection" class="result-section" hidden>
+
+            <h2>Quiz Completed!</h2>
+
+            <p id="finalMessage"></p>
+
+            <div class="final-score">
+                <p>Your Score</p>
+                <h1 id="finalScore">0 / 0</h1>
+            </div>
+
+            <p id="percentage"></p>
+
+            <button onclick="startQuiz()">
+                Restart Quiz
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Web Development Quiz</p>
+    </footer>
+
+    <!-- Link external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

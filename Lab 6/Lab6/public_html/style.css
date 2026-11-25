@@ -1,0 +1,303 @@
+
+/* =========================================
+   GENERAL PAGE STYLING
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    color: #333;
+}
+
+
+/* =========================================
+   HEADER STYLING
+========================================= */
+
+header {
+    background-color: #273c75;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+main {
+    max-width: 750px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================
+   START SECTION
+========================================= */
+
+.start-section {
+    text-align: center;
+}
+
+.start-section h2 {
+    color: #273c75;
+}
+
+
+/* =========================================
+   BUTTON STYLING
+========================================= */
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #21618c;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   QUIZ INFORMATION
+========================================= */
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.timer-box {
+    background-color: #fce4ec;
+    color: #c0392b;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   TIMER PROGRESS BAR
+========================================= */
+
+.timer-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 10px 0 25px;
+    overflow: hidden;
+}
+
+#timerProgress {
+    width: 100%;
+    height: 100%;
+    background-color: #27ae60;
+    transition: width 1s linear;
+}
+
+
+/* =========================================
+   QUESTION STYLING
+========================================= */
+
+#question {
+    color: #273c75;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   ANSWER OPTIONS
+========================================= */
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option {
+    display: block;
+    background-color: #f1f2f6;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.option:hover {
+    background-color: #e3f2fd;
+    border-color: #3498db;
+}
+
+.option input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.option.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+.option.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+
+
+/* =========================================
+   FEEDBACK STYLING
+========================================= */
+
+.feedback {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+    min-height: 25px;
+}
+
+.feedback.correct {
+    color: #27ae60;
+}
+
+.feedback.incorrect {
+    color: #e74c3c;
+}
+
+
+/* =========================================
+   NAVIGATION BUTTONS
+========================================= */
+
+.button-group {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#nextBtn {
+    background-color: #27ae60;
+}
+
+#nextBtn:hover {
+    background-color: #1e8449;
+}
+
+
+/* =========================================
+   FINAL RESULT SECTION
+========================================= */
+
+.result-section {
+    text-align: center;
+}
+
+.result-section h2 {
+    color: #273c75;
+}
+
+.final-score {
+    background-color: #eaf2f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.final-score h1 {
+    color: #2980b9;
+    font-size: 40px;
+    margin: 5px;
+}
+
+#percentage {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    text-align: center;
+    color: #555;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .quiz-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+}
