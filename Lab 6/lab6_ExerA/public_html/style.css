@@ -1,0 +1,173 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #205675;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Main sections */
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Input field */
+input {
+    padding: 8px;
+    margin: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #21618c;
+}
+
+/* Game buttons */
+.buttons {
+    margin: 15px 0;
+}
+
+/* Player and computer layout */
+.players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.player {
+    text-align: center;
+}
+
+/* Image styling */
+.player img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background-color: #7f8c8d;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.vs {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Result section */
+.result-section {
+    text-align: center;
+    padding: 10px;
+}
+
+#result {
+    font-size: 22px;
+}
+
+/* Result colours */
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
+
+.draw {
+    color: grey;
+}
+
+/* Scoreboard */
+.scoreboard p {
+    font-size: 18px;
+}
+
+/* History table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #205675;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Action buttons */
+.action-buttons {
+    margin-top: 15px;
+}
+
+/* Summary */
+#summary {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .players {
+        gap: 10px;
+    }
+
+    .player img {
+        width: 85px;
+        height: 85px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<!--
+ERROR IDENTIFICATION – grade.html
+
+Error 1 (Original Line 9):
+Incorrect form submission handling.
+Correction: Use onsubmit="return checkMark(event)".
+
+Error 2 (Original Line 17):
+Show Grade Table button is missing type="button".
+Correction: Add type="button".
+
+Error 3 (Original Line 20):
+Incorrect JavaScript filename (grades.js).
+Correction: Change to grade.js.
+
+Error 4 (Original Line 9):
+Form submission refreshes the page and clears the result.
+Correction: Use event.preventDefault() in checkMark().
+
+Error 5 (Missing feature):
+No Random Mark button.
+Correction: Add a button calling randomMark().
+
+Error 6 (Missing feature):
+No date and time display element.
+Correction: Add <p id="checkTime"></p>.
+
+Error 7 (Missing feature):
+No external CSS file.
+Correction: Link style.css inside the head.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Grade Calculator</title>
+
+    <!-- Link external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main heading -->
+    <header>
+        <h1>Student Grade Calculator</h1>
+        <p>Enter student details to calculate the grade.</p>
+    </header>
+
+    <main>
+
+        <!-- Student input form -->
+        <section class="form-section">
+
+            <h2>Student Information</h2>
+
+            <form name="gradeForm" onsubmit="return checkMark(event)">
+
+                <!-- Student name -->
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter student name"
+                >
+
+                <!-- Student mark -->
+                <label for="mark">Mark (0-100):</label>
+                <input
+                    type="text"
+                    id="mark"
+                    name="mark"
+                    placeholder="Enter mark"
+                >
+
+                <!-- Submit and random buttons -->
+                <div class="buttons">
+                    <button type="submit">Check Grade</button>
+
+                    <button type="button" onclick="randomMark()">
+                        Random Mark
+                    </button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- Result section -->
+        <section class="result-section">
+
+            <h2 id="result">Result will appear here</h2>
+
+            <!-- Date and time -->
+            <p id="checkTime"></p>
+
+        </section>
+
+        <!-- Grade table section -->
+        <section class="table-section">
+
+            <button type="button" onclick="showTable()">
+                Show Grade Table
+            </button>
+
+            <div id="tableContainer"></div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Student Grade Calculator</p>
+    </footer>
+
+    <!-- Link external JavaScript file -->
+    <script src="grade.js"></script>
+
+</body>
+</html>
